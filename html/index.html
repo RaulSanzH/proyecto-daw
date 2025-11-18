@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Apache Docker</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Body */
+        body {
+            background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px 20px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Main container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Cards section */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 40px 0;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            padding: 30px;
+            flex: 1 1 250px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Servidor Apache con Docker (HTTPS)</h1>
+            <p>Proyecto DAW – ¡Bienvenido!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cards">
+            <div class="card">
+                <h2>Rápido</h2>
+                <p>Despliega tu servidor en segundos gracias a Docker.</p>
+            </div>
+            <div class="card">
+                <h2>Seguro</h2>
+                <p>Con HTTPS activado y certificado autofirmado para pruebas.</p>
+            </div>
+            <div class="card">
+                <h2>Moderno</h2>
+                <p>Interfaz limpia, responsive y lista para proyectos DAW.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Proyecto DAW | Servidor Apache en Docker</p>
+    </footer>
+</body>
+</html>
